@@ -31,8 +31,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://abhishekkr05012007:g7x8GqZ6Y8ZH5iEb@cluster0.xujaw7s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "abhishekkr05012007")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "pulic")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -69,8 +69,8 @@ AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 100))
 
 FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
 
-SHORTNER_SITE =  environ.get('SHORTNER_SITE', '') #Put Only Shortner Site domain don't put like this https://tnlink.in/
+SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'link4earn.com') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
-SHORTNER_API =  environ.get('SHORTNER_API', '')
+SHORTNER_API =  environ.get('SHORTNER_API', '065980d01c653f8ddd5c9722c9becaf68dfc4d27')
 
 AUTO_DELETE =  environ.get('AUTO_DELETE', 'True')
